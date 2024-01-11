@@ -1,0 +1,45 @@
+<script setup>
+import Header from './components/Header.vue'
+</script>
+
+<template>
+   <header class="header">
+    <div class="header__container">
+        <div class="header__bar">
+            <a href="/">
+                <img src="/img/logo.png" class="header__logo" alt="logo">
+            </a>
+            <nav class="navigation">
+                <a class="navigation__link" href="/">Inicio</a>
+                <a class="navigation__link" ref="/">Nosotros</a>
+                <a class="navigation__link" ref="/">Blog</a>
+                <a class="navigation__link" ref="/">Tienda</a>
+            </nav>
+        </div><!-- header navigation -->
+        <div class="model">
+            <h1 class="model__name">Barca</h1>
+            <p class="model__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="model__price">29€</p>
+            <a href="/" class="model__link">Añadir producto</a>
+        </div>
+</div>
+<img src="/img/fbarca.png" alt="barca" class="header__barca">
+</header>
+
+<main class="products products__container">
+    <h2 class="products__heading">Nuestra colección</h2>
+    <div class="products__grid">
+        <div class="product">
+            <img class="product__image" src="/img/fbarbie.png" alt="image product">
+            <div class="product_content">
+                <h3 class="product__name">Barbie</h3>
+                <p class="product__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi iusto ipsum doloribus molestias optio nisi blanditiis voluptates.</p>
+                <p class="product__price">150€</p>
+                <a class="product__link" href="#">Añadir carrito</a>
+            </div>
+        </div> <!--product-->
+    </div> <!--product grid-->
+</main>
+
+</template>
+
