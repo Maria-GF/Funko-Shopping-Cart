@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --primary: #0179e9;
+  --primary: #336954;
   --black: #262626;
   --white: #fff;
   --font-family: "Outfit", sans-serif;
@@ -28,6 +28,12 @@ img {
   max-width: 120rem;
   margin: 0 auto;
   width: 95%;
+}
+[class*="__heading"] {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+  color:black
 }
 
 .header {
@@ -57,6 +63,9 @@ img {
     animation: 1s ease-in-out 0s 1 showImage;
 
   }
+}
+.cart {
+  width: 6rem;
 }
 @keyframes showImage {
   0% {
@@ -151,4 +160,57 @@ img {
 }
 .model__link:hover {
   background-color: rgb(148, 148, 4);
+}
+.products__grid {
+  display: grid;
+  gap: 4rem;
+}
+@media (min-width: 768px) {
+  .products__grid {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
+@media (min-width: 1200px) {
+  .products__grid {
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+}
+.product {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+.product__name {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.product__description {
+font-size: 1.6rem;
+}
+.product__price {
+  margin: 0;
+  font-size: 4rem;
+  color: var(--primary);
+  font-weight: 900;
+}
+.product__link {
+  margin-top: 1rem;
+  display: block;
+  text-decoration: none;
+  color: black;
+  border: 3px solid var(--primary);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 1rem 5rem;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+.product__link:hover {
+  background-color: #235c46;
+  color: var(--white);
 }
